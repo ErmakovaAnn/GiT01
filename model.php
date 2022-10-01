@@ -16,7 +16,7 @@ class Model{
     {
         return $this->country;
     }
-    public function getSpecifications() : Date
+    public function getSpecifications() : string
     {
         return $this->specifications;
     }
