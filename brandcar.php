@@ -2,14 +2,14 @@
 class Brandcar
 {
     public function __construct(
-        private string $brandname,
+        private string $name,
         private Country $counrty, 
         private string $infoowner){
     }
 
-    public function getBrandname() : string
+    public function getName() : string
     {
-        return $this->brandname;
+        return $this->name;
     }
     public function getBrandcounrty() : string
     {
