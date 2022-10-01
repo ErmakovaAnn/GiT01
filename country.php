@@ -1,27 +1,21 @@
 <?php
 class Country{
     public function __construct(
-        private string $country,
+        private string $name,
         private string $domain, 
-        private string $phonecod)
-        {
-            try {
-                $this->validateCountry();
-                $this->validatePhoneCode();
-                $this->validateDomain();
-            }
+        private string $phoneCode){
         }
 
-    public function getCountry() : string
+    public function getName() : string
     {
-        return $this->country;
+        return $this->name;
     }
     public function getDomain() : string
     {
         return $this->domain;
     }
-    public function getPhonecod() : Date
+    public function getPhonecode() : Date
     {
-        return $this->phonecod;
+        return $this->phoneCode;
     }
 }
